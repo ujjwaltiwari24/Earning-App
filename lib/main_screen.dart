@@ -14,15 +14,15 @@ class EarningApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: const Color(0xFF0B2447),
-        scaffoldBackgroundColor: const Color(0xFF081A45),
+        primaryColor: const Color(0xFF001F3F), // Dark blue primary color
+        scaffoldBackgroundColor: const Color(0xFF001F3F), // Dark blue background
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: const Color(0xFF0B2447),
+          backgroundColor: const Color(0xFF001F3F),
           selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white54,
+          unselectedItemColor: Colors.white60,
           elevation: 10,
         ),
       ),
@@ -70,7 +70,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 }
 
-// 🌟 Home Screen with professional dopamine UI
+// 🌟 Home Screen UI with Professional Design
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0B2447), Color(0xFF19376D)],
+            colors: [Color(0xFF001F3F), Color(0xFF003366)], // Dark blue gradient
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -94,13 +94,13 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 🧠 Header Card
+                // 🧠 Header Card with Professional Look
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                     gradient: const LinearGradient(
-                      colors: [Color(0xFF1D2B64), Color(0xFFf8cdda)],
+                      colors: [Color(0xFF004B8D), Color(0xFF0074D9)], // Smooth blue gradient
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
@@ -134,13 +134,13 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 24),
 
                 const Text(
-                  "Earn Instantly!",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: Colors.white),
+                  "Kamao Money",
+                  style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700, color: Colors.white),
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  "Try your luck and complete tasks to win rewards!",
-                  style: TextStyle(fontSize: 14, color: Colors.white70),
+                  "Complete tasks to win rewards!",
+                  style: TextStyle(fontSize: 24, color: Color.fromARGB(179, 255, 255, 255)),
                 ),
 
                 const SizedBox(height: 20),
@@ -152,10 +152,10 @@ class HomeScreen extends StatelessWidget {
                     crossAxisSpacing: 18,
                     mainAxisSpacing: 18,
                     children: const [
-                      FeatureCard(title: "Scratch Card", icon: Icons.money, color: Colors.orange),
-                      FeatureCard(title: "Spin & Win", icon: Icons.casino, color: Colors.redAccent),
-                      FeatureCard(title: "Refer & Earn", icon: Icons.group, color: Colors.greenAccent),
-                      FeatureCard(title: "Watch Ads", icon: Icons.play_circle_fill, color: Colors.blueAccent),
+                      FeatureCard(title: "Scratch Card", icon: Icons.money, color: Color.fromARGB(255, 169, 242, 255)),
+                      FeatureCard(title: "Spin & Win", icon: Icons.casino, color: Color.fromARGB(255, 169, 242, 255)),
+                      FeatureCard(title: "Refer & Earn", icon: Icons.group, color: Color.fromARGB(255, 169, 242, 255)),
+                      FeatureCard(title: "Watch Ads", icon: Icons.play_circle_fill, color: Color.fromARGB(255, 169, 242, 255)),
                     ],
                   ),
                 ),
@@ -180,7 +180,7 @@ class FeatureCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // TODO: Navigate to feature screens
+        // TODO: Implement navigation
       },
       child: Container(
         decoration: BoxDecoration(
@@ -207,11 +207,7 @@ class FeatureCard extends StatelessWidget {
               Text(
                 title,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white,
-                ),
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
               ),
             ],
           ),
@@ -228,10 +224,7 @@ class EarnScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text(
-        "💰 Earn Section",
-        style: TextStyle(fontSize: 22, color: Colors.white),
-      ),
+      child: Text("💰 Earn Section", style: TextStyle(fontSize: 22, color: Colors.white)),
     );
   }
 }
@@ -243,10 +236,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text(
-        "👤 Profile Page",
-        style: TextStyle(fontSize: 22, color: Colors.white),
-      ),
+      child: Text("👤 Profile Page", style: TextStyle(fontSize: 22, color: Colors.white)),
     );
   }
 }

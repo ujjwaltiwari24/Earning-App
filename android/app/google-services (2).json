@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "333332734009",
+    "project_id": "earning-app-54a20",
+    "storage_bucket": "earning-app-54a20.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333332734009:android:911455201f66a0603b2de8",
+        "android_client_info": {
+          "package_name": "com.dev25.earningapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeCvh5S19cleZvm5bDXb4KHdfEpbt5Id4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
